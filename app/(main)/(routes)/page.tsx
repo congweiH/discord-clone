@@ -1,9 +1,11 @@
 import { Button } from '@/components/ui/button';
+import { UserButton } from '@clerk/nextjs';
 
 export default function Home() {
   return (
     <div className=" text-red-500">
-      <Button>page</Button>
+      <UserButton afterSignOutUrl="/" />
+      procted page
     </div>
   );
 }
